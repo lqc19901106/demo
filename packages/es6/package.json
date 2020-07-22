@@ -1,0 +1,39 @@
+{
+  "name": "es6-demo",
+  "version": "0.0.1",
+  "description": "es6 demo",
+  "keywords": [
+    "let",
+    "const",
+    "spread",
+    "promise",
+    "async",
+    "decorator",
+    "generator",
+    "proxy",
+    "reflect",
+    "set",
+    "map",
+    "symbol",
+    "class",
+    "iterator",
+    "function"
+  ],
+  "author": "liuqichao <liuqichao@sinotrans.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/es6.js",
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@babel/preset-env": "^7.10.4"
+  },
+  "scripts": {
+    "build": "babel src -d dist"
+  }
+}

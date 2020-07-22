@@ -1,0 +1,29 @@
+{
+  "name": "ts-demo",
+  "version": "0.0.1",
+  "description": "typescript demo",
+  "keywords": [
+    "typescript",
+    "demo"
+  ],
+  "author": "liuqichao <liuqichao@sinotrans.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/ts.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://repository.i.sinotrans.com/repository/sinotrans-npm/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.5"
+  }
+}

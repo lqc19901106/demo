@@ -1,0 +1,25 @@
+{
+  "name": "es5-new",
+  "version": "0.0.1",
+  "description": "es5 html5 new feature test",
+  "keywords": [
+    "indexDB",
+    "Object"
+  ],
+  "author": "liuqichao <liuqichao@sinotrans.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/es5-new.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://repository.i.sinotrans.com/repository/sinotrans-npm/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

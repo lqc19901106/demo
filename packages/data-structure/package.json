@@ -1,0 +1,25 @@
+{
+  "name": "data-structure",
+  "version": "0.0.1",
+  "description": "data structure",
+  "keywords": [
+    "data",
+    "structure"
+  ],
+  "author": "liuqichao <liuqichao@sinotrans.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/dataStructure.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://repository.i.sinotrans.com/repository/sinotrans-npm/"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}

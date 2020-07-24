@@ -32,6 +32,9 @@ var Dog = isAnimal(_class2 = function Dog() {
 }) || _class2;
  */
 
+/**
+ * 类的修饰
+ */
 function isAnimal(target) {
   target.isAnimal = true;
   return target;
@@ -48,20 +51,44 @@ function log(message) {
   };
 }
 
-console.log("before class");
-@log("class Bar")
-class Bar {
-  @log("class method bar")
-  bar() {}
-
-  @log("class getter alice")
-  get alice() {}
-
-  @log("class property bob")
-  bob = 1;
-}
-console.log("after class");
-let bar = {
-  @log("object method bar")
-  bar() {},
+/**
+ * 实例的修饰
+ */
+const funcs = {
+  funcA: () => {
+    console.log("A");
+  },
+  funcB: () => {
+    console.log("B");
+  },
 };
+function mixin(...mixin) {
+  return function (target) {
+    Object.assign(target.prototype, ...mixin);
+  };
+}
+
+@mixin(funcs)
+class Foo {}
+
+var c = new Foo();
+c.funcA();
+c.funcB();
+
+// console.log("before class");
+// @log("class Bar")
+// class Bar {
+//   @log("class method bar")
+//   bar() {}
+
+//   @log("class getter alice")
+//   get alice() {}
+
+//   @log("class property bob")
+//   bob = 1;
+// }
+// console.log("after class");
+// let bar = {
+//   @log("object method bar")
+//   bar() {},
+// };

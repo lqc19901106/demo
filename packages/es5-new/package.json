@@ -11,10 +11,10 @@
   "license": "MIT",
   "main": "lib/es5-new.js",
   "directories": {
-    "lib": "lib"
+    "src": "src"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "publishConfig": {
     "registry": "http://repository.i.sinotrans.com/repository/sinotrans-npm/"

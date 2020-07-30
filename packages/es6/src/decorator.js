@@ -62,6 +62,7 @@ const funcs = {
     console.log("B");
   },
 };
+
 function mixin(...mixin) {
   return function (target) {
     Object.assign(target.prototype, ...mixin);

@@ -1,0 +1,37 @@
+{
+  "name": "backbonejs",
+  "version": "0.0.1",
+  "description": "backbonejs demo",
+  "keywords": [
+    "backbonejs"
+  ],
+  "author": "liuqichao <liuqichao@sinotrans.com>",
+  "homepage": "https://github.com/lqc19901106/demo#readme",
+  "license": "MIT",
+  "main": "lib/backbonejs.js",
+  "directories": {
+    "lib": "lib",
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://repository.i.sinotrans.com/repository/sinotrans-npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lqc19901106/demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lqc19901106/demo/issues"
+  },
+  "dependencies": {
+    "backbone": "^1.4.0",
+    "jquery": "^3.5.1",
+    "requirejs": "^2.3.6",
+    "underscore": "^1.10.2"
+  }
+}

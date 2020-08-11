@@ -1,9 +1,8 @@
 requirejs.config({
-    baseUrl: 'node_modules',
     paths: {
-        backbone: 'backbone/backbone-min.js',
-        jquery: 'jquery/dist/jquery.min.js',
-        underscore: 'underscore/underscore-min.js',
+        backbone: './node_modules/backbone/backbone',
+        jquery: './node_modules/jquery/dist/jquery',
+        underscore: './node_modules/underscore/underscore',
     },
     shim: {
         backbone: {
@@ -12,14 +11,13 @@ requirejs.config({
         },
         underscore: {
             exports: '_'
+        },
+        jquery: {
+            exports: '$'
         }
     }
 });
 
-
-define([
-    './common'
-], function(AppView) {
-    new AppView;
-    
+require(["./scripts/common"], function(AppView) {
+    new AppView();
 });

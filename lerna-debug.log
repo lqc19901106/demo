@@ -2,20 +2,10 @@
 0 silly argv   _: [ 'create' ],
 0 silly argv   lernaVersion: '3.22.1',
 0 silly argv   '$0': '..\\..\\AppData\\Roaming\\npm\\node_modules\\lerna\\cli.js',
-0 silly argv   name: 'backboneTodo'
+0 silly argv   name: 'react'
 0 silly argv }
 1 notice cli v3.22.1
 2 verbose rootPath C:\Users\liuqichao\Workspace\demo
-3 error Error: canceled
-3 error     at Interface.<anonymous> (C:\Users\liuqichao\Workspace\demo\node_modules\read\lib\read.js:66:13)
-3 error     at Interface.emit (events.js:315:20)
-3 error     at Interface._ttyWrite (readline.js:866:16)
-3 error     at ReadStream.onkeypress (readline.js:205:10)
-3 error     at ReadStream.emit (events.js:315:20)
-3 error     at emitKeys (internal/readline/utils.js:335:14)
-3 error     at emitKeys.next (<anonymous>)
-3 error     at ReadStream.onData (readline.js:1133:36)
-3 error     at ReadStream.emit (events.js:315:20)
-3 error     at addChunk (_stream_readable.js:295:12)
-3 error     at readableAddChunk (_stream_readable.js:271:9)
-3 error     at ReadStream.Readable.push (_stream_readable.js:212:10)
+3 error JSONError: Unexpected token } in JSON at position 323 while parsing near '...    "lib": "lib",  },  "files": [    ...' in packages\backbonejs\package.json
+3 error     at module.exports (C:\Users\liuqichao\Workspace\demo\node_modules\parse-json\index.js:26:19)
+3 error     at parse (C:\Users\liuqichao\Workspace\demo\node_modules\load-json-file\index.js:15:9)

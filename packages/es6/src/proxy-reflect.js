@@ -41,3 +41,8 @@ function print() {
 
 observe(print);
 person.name = "李四";
+
+/***
+ * proxy
+ *
+ */

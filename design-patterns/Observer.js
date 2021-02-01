@@ -119,8 +119,6 @@ observer.remove("job", jobListForA);
 observer.publish("examinationB", 80); // 没有可匹配的订阅，无输出
 observer.publish("job", ["前端", "后端", "测试"]); // 输出B的岗位
 
-
-
 /**
  * 使用proxy实现的观察者模式
  */
@@ -145,3 +143,53 @@ function print() {
 
 observe(print);
 person.name = "李四";
+
+const Event = {
+  on(eventType, fns) {},
+  trigger() {},
+  remove() {},
+};
+
+var observer = {
+  subscribes: {},
+  subscribe(type, fun) {
+    if (!this.subscribes[type]) {
+      this.subscribes[type] = [];
+    }
+    if (typeof fun === "function") {
+      this.subscribes[type].push(fun);
+    }
+  },
+  publish(type, args) {
+    var funs = this.subscribes[type];
+    if (!funs || funs.length === 0) {
+      return;
+    }
+    for (let index = 0; index < funs.length; index++) {
+      const fun = funs[index];
+      fun.apply(this, args);
+    }
+  },
+  remove(type, fn) {
+    if (!type) {
+      this.subscribes = {};
+      return false;
+    }
+    var funs = this.subscribes[key];
+
+    if (!funs || !funs.length) {
+      return;
+    }
+
+    if (typeof fn === "undefined") {
+      this.subscribes[type] = [];
+      return;
+    }
+
+    for (let index = 0; index < funs.length; index++) {
+      if (funs[i] === fn) {
+        funs.splice(index, 1);
+      }
+    }
+  },
+};
